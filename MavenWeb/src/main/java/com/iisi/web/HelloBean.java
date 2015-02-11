@@ -1,5 +1,5 @@
 //http://www.mkyong.com/jsf2/jsf-2-0-hello-world-example/
-package com.mkyong.common;
+package com.iisi.web;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
