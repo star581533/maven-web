@@ -43,6 +43,13 @@
 			<version>1.0</version>
 		</dependency>
 		
+		<!-- Primefaces  -->
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>4.0</version>
+		</dependency>
+		
 		<dependency>
 	  <groupId>org.glassfish.web</groupId>
 	  <artifactId>el-impl</artifactId>
@@ -50,8 +57,7 @@
      </dependency>
   </dependencies>
   <build>
-		<finalName>JavaServerFaces</finalName>
- 
+		<finalName>JavaServerFaces</finalName> 
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
