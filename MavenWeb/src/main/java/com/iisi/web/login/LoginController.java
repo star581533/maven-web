@@ -24,9 +24,6 @@ public class LoginController implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private String userId;
-	
-	private String password;
 	private LoginDTO dto;
 	
 	private String message;	
@@ -37,7 +34,12 @@ public class LoginController implements Serializable{
 	}
 	
 	public String loginButton(){	
-		return "index.xhtml?faces-redirect=true";
+		
+		if(dto.getUserId().equals("Alex")){
+			return "index.xhtml?faces-redirect=true";
+		}else{
+			return null;
+		}		
 	}
 		
 	/**
@@ -50,22 +52,6 @@ public class LoginController implements Serializable{
 	
 	public void cancelButton(){
 		dto = new LoginDTO();
-	}
-
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
 	}
 
 	public LoginDTO getDto() {
