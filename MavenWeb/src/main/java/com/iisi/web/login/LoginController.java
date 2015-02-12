@@ -1,6 +1,6 @@
 //http://www.mkyong.com/jsf2/jsf-2-0-spring-hibernate-integration-example/
 
-package com.iisi.web;
+package com.iisi.web.login;
 
 import java.io.Serializable;
 import java.util.List;
@@ -37,7 +37,7 @@ public class LoginController implements Serializable{
 	}
 	
 	public String loginButton(){	
-		return null;
+		return "index.xhtml?faces-redirect=true";
 	}
 		
 	/**
