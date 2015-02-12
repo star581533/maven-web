@@ -68,13 +68,23 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 		</dependency>
 		
 		<!-- Spring AOP dependency -->
-		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>3.2.6.RELEASE</version>
+		</dependency>
 		<!-- MySQL database driver -->
 		
 		<!-- Hibernate framework -->
 		
 		<!-- Hibernate annotation -->
 
+		<!-- JSR-330 -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
 		
 		<dependency>
 	  <groupId>org.glassfish.web</groupId>
