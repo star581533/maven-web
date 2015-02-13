@@ -22,7 +22,7 @@
 							<h:outputText value="使用者帳號：" />
 						</td>
 						<td>
-							<h:outputText value="#{queryUser.dto.user.userId}" />
+							<h:outputText value="#{queryUserController.dto.user.userId}" />
 						</td>
 					</tr>
 					<tr>
@@ -30,7 +30,7 @@
 							<h:outputText value="使用者姓名：" />
 						</td>
 						<td>
-							<h:inputText value="#{queryUser.dto.user.userName}" />
+							<h:inputText value="#{queryUserController.dto.user.userName}" />
 						</td>
 					</tr>
 					<tr>
@@ -38,7 +38,7 @@
 							<h:outputText value="科別：" />
 						</td>
 						<td>
-							<p:autoComplete id="btn" dropdown="true" value="#{queryUser.dto.user.roleId}" />
+							<p:autoComplete id="btn" dropdown="true" value="#{queryUserController.dto.user.roleId}" />
 						</td>
 					</tr>
 					<tr>
@@ -46,7 +46,7 @@
 							<h:outputText value="在職狀態：" />
 						</td>
 						<td>
-							<p:selectOneRadio id="" value="#{queryUser.dto.user.state}">
+							<p:selectOneRadio id="" value="#{queryUserController.dto.user.state}">
 								<f:selectItem itemLabel="在職" itemValue="Y" />
 								<f:selectItem itemLabel="離職" itemValue="N" />
 								<f:selectItem itemLabel="停用" itemValue="S" />

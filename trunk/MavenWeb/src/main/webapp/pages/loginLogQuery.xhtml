@@ -18,7 +18,7 @@
 		</h:head>	
 		<h:form>
 			<p:growl id="growl" showDetail="true" sticky="true" />
-			<p:panel id="loginLogQuery" header="簽到/簽退紀錄查詢">
+			<p:panel id="loginLogQueryController" header="簽到/簽退紀錄查詢">
 				<p:fieldset legend="簽到/簽退紀錄查詢">
 					<table width="100%">
 						<tr>
@@ -27,8 +27,8 @@
 								<h:outputText value="日期區間：" />
 							</td>
 							<td>
-								<p:calendar id="startDate" showOn="button" value="#{loginLogQuery.dto.startDate}" />~
-								<p:calendar id="endDate" showOn="button" value="#{loginLogQuery.dto.endDate}" />
+								<p:calendar id="startDate" showOn="button" value="#{loginLogQueryController.dto.startDate}" />~
+								<p:calendar id="endDate" showOn="button" value="#{loginLogQueryController.dto.endDate}" />
 							</td>
 						</tr>
 						<tr>
@@ -36,9 +36,9 @@
 								<h:outputText value="科別：" />
 							</td>
 							<td>
-								<p:selectOneMenu id="office" value="#{loginLogQuery.dto.officeId}">
+								<p:selectOneMenu id="office" value="#{loginLogQueryController.dto.officeId}">
 						        	<f:selectItem itemLabel="" itemValue="" />
-						        	<f:selectItems value="#{loginLogQuery.officeAll}"/>        
+						        	<f:selectItems value="#{loginLogQueryController.officeAll}"/>        
 						        </p:selectOneMenu>
 							</td>
 						</tr>
@@ -47,7 +47,7 @@
 								<h:outputText value="使用者帳號：" />
 							</td>
 							<td>
-								<h:inputText id="userId" value="#{loginLogQuery.dto.userId}" />
+								<h:inputText id="userId" value="#{loginLogQueryController.dto.userId}" />
 							</td>
 						</tr>
 						<tr>
@@ -55,18 +55,18 @@
 								<h:outputText value="使用者姓名：" />
 							</td>
 							<td>
-								<h:inputText id="userName" value="#{loginLogQuery.dto.userName}" />
+								<h:inputText id="userName" value="#{loginLogQueryController.dto.userName}" />
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<p:commandButton value="查詢" action="#{loginLogQuery.doQuery}" ajax="false" update="growl"/>
+								<p:commandButton value="查詢" action="#{loginLogQueryController.doQuery}" ajax="false" update="growl"/>
 							</td>
 						</tr>
 					</table>
 				</p:fieldset>
-				<p:fieldset legend="" id="resultTable" rendered="#{loginLogQuery.dto.loginLogs != null}">
-					<p:dataTable var="loginLog" value="#{loginLogQuery.dto.loginLogs}" rows="10"
+				<p:fieldset legend="" id="resultTable" rendered="#{loginLogQueryController.dto.loginLogs != null}">
+					<p:dataTable var="loginLog" value="#{loginLogQueryController.dto.loginLogs}" rows="10"
 						paginator="true"
 						rowsPerPageTemplate="5,10,15">
 						<p:column headerText="作業日期">

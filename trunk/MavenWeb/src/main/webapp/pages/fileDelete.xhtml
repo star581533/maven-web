@@ -14,7 +14,7 @@
 		</h:head>		
 		<h:form>
 			<p:growl id="growl" showDetail="true" sticky="true" />
-			<p:panel id="fileDelete" header="檔案刪除">
+			<p:panel id="fileDeleteController" header="檔案刪除">
 				<p:fieldset legend="檔案刪除">
 					<table>
 						<tr>
@@ -23,7 +23,7 @@
 								<h:outputText value="類型：" />
 							</td>
 							<td>
-								<p:selectOneRadio id="type" value="#{fileDelete.dto.type}"> 
+								<p:selectOneRadio id="type" value="#{fileDeleteController.dto.type}"> 
 									<f:selectItem itemLabel="公文" itemValue="Y"/>
 									<f:selectItem itemLabel="非公文" itemValue="N" />
 								</p:selectOneRadio>
@@ -34,7 +34,7 @@
 								<h:outputText value="密件：" />
 							</td>
 							<td>
-								<p:selectOneRadio id="sercet" value="#{fileDelete.dto.sercet}"> 
+								<p:selectOneRadio id="sercet" value="#{fileDeleteController.dto.sercet}"> 
 									<f:selectItem itemLabel="是" itemValue="Y" />
 									<f:selectItem itemLabel="否" itemValue="N" />
 								</p:selectOneRadio>
@@ -46,8 +46,8 @@
 								<h:outputText value="日期區間：" />
 							</td>
 							<td>
-								<p:calendar id="startDate" showOn="button" value="#{fileDelete.dto.startDate}"/>~
-								<p:calendar id="endDate" showOn="button" value="#{fileDelete.dto.endDate}"/>
+								<p:calendar id="startDate" showOn="button" value="#{fileDeleteController.dto.startDate}"/>~
+								<p:calendar id="endDate" showOn="button" value="#{fileDeleteController.dto.endDate}"/>
 							</td>
 						</tr>
 						<tr>
@@ -55,7 +55,7 @@
 								<h:outputText value="分類號："/>
 							</td>
 							<td>
-								<h:inputText value="#{fileDelete.dto.classNum}" />
+								<h:inputText value="#{fileDeleteController.dto.classNum}" />
 							</td>
 						</tr>
 						<tr>
@@ -63,7 +63,7 @@
 								<h:outputText value="公文文號："/>
 							</td>
 							<td>
-								<h:inputText value="#{fileDelete.dto.disPatchNum}"/>
+								<h:inputText value="#{fileDeleteController.dto.disPatchNum}"/>
 							</td>
 						</tr>
 						<tr>
@@ -71,7 +71,7 @@
 								<h:outputText value="主旨："/>
 							</td>
 							<td>
-								<h:inputTextarea value="#{fileDelete.dto.subject}"/>
+								<h:inputTextarea value="#{fileDeleteController.dto.subject}"/>
 							</td>
 						</tr>
 						<tr>
@@ -79,20 +79,20 @@
 								<h:outputText value="機關："/>
 							</td>
 							<td>
-								<h:inputText value="#{fileDelete.dto.government}"/>
+								<h:inputText value="#{fileDeleteController.dto.government}"/>
 							</td>
 						</tr>
 						<tr>
 							<td colspan="2">
-								<p:commandButton value="查詢" action="#{fileDelete.doQuery}" ajax="false" update="growl"/>
+								<p:commandButton value="查詢" action="#{fileDeleteController.doQuery}" ajax="false" update="growl"/>
 			   					<p:commandButton value="重設" ajax="false"/>
 							</td>
 						</tr>
 					</table>
 				</p:fieldset>			
-				<p:fieldset legend="" id="resultList" rendered="#{fileDelete.dto.files != null}">
+				<p:fieldset legend="" id="resultList" rendered="#{fileDeleteController.dto.files != null}">
 					<table width="100%">
-					<p:dataTable var="file" value="#{fileDelete.dto.files}" rows="10"
+					<p:dataTable var="file" value="#{fileDeleteController.dto.files}" rows="10"
 						paginator="true"
 						rowsPerPageTemplate="5,10,15">
 						<p:column headerText="日期">

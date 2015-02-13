@@ -22,7 +22,7 @@
 							<h:outputText value="類型：" />
 						</td>
 						<td>
-							<p:selectOneRadio id="type" value="#{fileUpload.dto.type}">
+							<p:selectOneRadio id="type" value="#{fileUploadController.dto.type}">
 								<f:selectItem itemLabel="公文" itemValue="Y" />
 								<f:selectItem itemLabel="非公文" itemValue="N" />
 							</p:selectOneRadio>
@@ -34,7 +34,7 @@
 							<h:outputText value="密件：" />
 						</td>
 						<td>
-							<p:selectOneRadio id="secret" value="#{fileUpload.dto.secret}">
+							<p:selectOneRadio id="secret" value="#{fileUploadController.dto.secret}">
 								<f:selectItem itemLabel="是" itemValue="Y" />
 								<f:selectItem itemLabel="否" itemValue="N" />
 							</p:selectOneRadio>
@@ -46,8 +46,8 @@
 							<h:outputText value="日期：" />
 						</td>
 						<td>
-							<p:calendar id="startDate" showOn="button" value="#{fileUpload.dto.startDate}" />~
-							<p:calendar id="endDate" showOn="button" value="#{fileUpload.dto.endDate}"/>
+							<p:calendar id="startDate" showOn="button" value="#{fileUploadController.dto.startDate}" />~
+							<p:calendar id="endDate" showOn="button" value="#{fileUploadController.dto.endDate}"/>
 						</td>
 					</tr>
 					<tr>
@@ -56,7 +56,7 @@
 							<h:outputText value="分類號："/>
 						</td>
 						<td>
-							<h:inputText value="#{fileUpload.dto.classNum}" />
+							<h:inputText value="#{fileUploadController.dto.classNum}" />
 						</td>
 					</tr>
 					<tr>
@@ -65,7 +65,7 @@
 							<h:outputText value="公文文號："/>
 						</td>
 						<td>
-							<h:inputText value="#{fileUpload.dto.disPatchNum}"/>
+							<h:inputText value="#{fileUploadController.dto.disPatchNum}"/>
 						</td>
 					</tr>
 					<tr>
@@ -74,7 +74,7 @@
 							<h:outputText value="主旨："/>
 						</td>
 						<td>
-							<h:inputTextarea value="#{fileUpload.dto.subject}" />
+							<h:inputTextarea value="#{fileUploadController.dto.subject}" />
 						</td>
 					</tr>
 					<tr>
@@ -83,8 +83,8 @@
 							<h:outputText value="檔案："/>
 						</td>
 						<td>
-							<p:fileUpload value="#{fileUpload.file}" 
-							fileUploadListener="#{fileUpload.uploadData}" mode="simple" skinSimple="true"/>
+							<p:fileUpload value="#{fileUploadController.file}" 
+								fileUploadListener="#{fileUploadController.uploadData}" mode="simple" skinSimple="true"/>
 						</td>
 					</tr>
 					<tr>
@@ -92,12 +92,12 @@
 							<h:outputText value="機關："/>
 						</td>
 						<td>
-							<h:inputText value="#{fileUpload.dto.government}" />
+							<h:inputText value="#{fileUploadController.dto.government}" />
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<p:commandButton value="確定" actionListener="#{fileUpload.uploadData}" update="growl" />
+							<p:commandButton value="確定" actionListener="#{fileUploadController.uploadData}" update="growl" />
 	   						<p:commandButton value="重設" ajax="false"/>
 						</td>
 					</tr>

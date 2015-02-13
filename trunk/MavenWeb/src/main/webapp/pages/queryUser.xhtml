@@ -18,7 +18,7 @@
 		</h:head>		
 		<h:form>
 			<p:growl id="growl" showDetail="true" sticky="true" />
-			<p:panel id="queryUser" header="帳號查詢">
+			<p:panel id="queryUserController" header="帳號查詢">
 				<p:fieldset legend="帳號查詢">
 					<table>
 						<tr>
@@ -26,13 +26,13 @@
 								<h:outputText value="科別：" />
 							</td>	
 							<td>
-								<p:selectOneMenu id="office" value="#{queryUser.dto.officeId}">
+								<p:selectOneMenu id="office" value="#{queryUserController.dto.officeId}">
 									<f:selectItem itemLabel="" itemValue="" />
-						        	<f:selectItems value="#{queryUser.officeAll}"/>        
+						        	<f:selectItems value="#{queryUserController.officeAll}"/>        
 						        </p:selectOneMenu>
 							</td>					        
 							<td>
-								<p:commandButton value="查詢" action="#{queryUser.queryButton}" ajax="false" update="growl"/>
+								<p:commandButton value="查詢" action="#{queryUserController.queryButton}" ajax="false" update="growl"/>
 							</td>
 						</tr>
 						<tr>
@@ -41,7 +41,7 @@
 							 	<h:outputText value="在職狀態：" />
 							</td>
 							<td colspan="2">
-								<p:selectOneRadio id="state" value="#{queryUser.dto.state}">
+								<p:selectOneRadio id="state" value="#{queryUserController.dto.state}">
 									<f:selectItem itemLabel="在職" itemValue="Y" />
 									<f:selectItem itemLabel="離職" itemValue="N"/>
 									<f:selectItem itemLabel="停用" itemValue="S"/>
@@ -51,13 +51,13 @@
 						</tr>
 					</table>
 				</p:fieldset>
-				<p:fieldset legend="使用者資訊" id="resultList" rendered="#{queryUser.dto.users != null}">					
-					<p:dataTable  var="user" value="#{queryUser.dto.users}" rows="10" paginator="true" rowsPerPageTemplate="5,10,15">
+				<p:fieldset legend="使用者資訊" id="resultList" rendered="#{queryUserController.dto.users != null}">					
+					<p:dataTable  var="user" value="#{queryUserController.dto.users}" rows="10" paginator="true" rowsPerPageTemplate="5,10,15">
 						<p:column headerText="科別">
 							<h:outputText value="#{user.officeId}" />
 						</p:column>
 						<p:column headerText="使用者帳號">
-							<p:commandLink id="userIdLink" actionListener="#{queryUser.userDataLink}" action="#{queryUser.userForward}">
+							<p:commandLink id="userIdLink" actionListener="#{queryUserController.userDataLink}" action="#{queryUserController.userForward}">
 								<h:outputText value="#{user.userId}" />
 								<f:attribute name="userId" value="#{user.userId}" />
 							</p:commandLink>

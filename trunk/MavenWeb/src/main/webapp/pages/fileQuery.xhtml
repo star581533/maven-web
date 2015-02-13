@@ -14,7 +14,7 @@
 		</h:head>	
 		<h:form>
 			<p:growl id="growl" showDetail="true" sticky="true" />
-			<p:panel id="fileQuery" header="檔案查詢">			
+			<p:panel id="fileQueryController" header="檔案查詢">			
 				<p:fieldset legend="檔案查詢">
 					<table>
 						<tr>
@@ -23,7 +23,7 @@
 								<h:outputText value="類型：" />
 							</td>
 							<td>
-								<p:selectOneRadio id="type" value="#{fileQuery.dto.type}">
+								<p:selectOneRadio id="type" value="#{fileQueryController.dto.type}">
 									<f:selectItem itemLabel="公文" itemValue="Y" />
 									<f:selectItem itemLabel="非公文" itemValue="N" />
 								</p:selectOneRadio>
@@ -34,7 +34,7 @@
 								<h:outputText value="密件：" />
 							</td>
 							<td>
-								<p:selectOneRadio id="secret" value="#{fileQuery.dto.secret}">
+								<p:selectOneRadio id="secret" value="#{fileQueryController.dto.secret}">
 									<f:selectItem itemLabel="是" itemValue="Y"/>
 									<f:selectItem itemLabel="否" itemValue="N"/>
 								</p:selectOneRadio>
@@ -46,8 +46,8 @@
 								<h:outputText value="日期區間：" />					
 							</td>
 							<td>
-								<p:calendar id="startDate" showOn="button" value="#{fileQuery.dto.startDate}"/>~
-								<p:calendar id="endDate" showOn="button" value="#{fileQuery.dto.endDate}"/>
+								<p:calendar id="startDate" showOn="button" value="#{fileQueryController.dto.startDate}"/>~
+								<p:calendar id="endDate" showOn="button" value="#{fileQueryController.dto.endDate}"/>
 							</td>
 						</tr>
 						<tr>
@@ -55,7 +55,7 @@
 								<h:outputText value="分類號："/>
 							</td>
 							<td>
-								<h:inputText value="#{fileQuery.dto.classNum}" />
+								<h:inputText value="#{fileQueryController.dto.classNum}" />
 							</td>
 						</tr>
 						<tr>
@@ -63,7 +63,7 @@
 								<h:outputText value="公文文號："/>
 							</td>
 							<td>
-								<h:inputText value="#{fileQuery.dto.disPatchNum}" />
+								<h:inputText value="#{fileQueryController.dto.disPatchNum}" />
 							</td>
 						</tr>
 						<tr>
@@ -71,7 +71,7 @@
 								<h:outputText value="主旨："/>
 							</td>
 							<td>
-								<h:inputTextarea value="#{fileQuery.dto.subject}" />
+								<h:inputTextarea value="#{fileQueryController.dto.subject}" />
 							</td>
 						</tr>
 						<tr>
@@ -79,20 +79,20 @@
 								<h:outputText value="機關："/>
 							</td>
 							<td>
-								<h:inputText value="#{fileQuery.dto.government}" />
+								<h:inputText value="#{fileQueryController.dto.government}" />
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<p:commandButton value="查詢" action="#{fileQuery.doQuery}" ajax="false" update="growl"/>
+								<p:commandButton value="查詢" action="#{fileQueryController.doQuery}" ajax="false" update="growl"/>
 		   						<p:commandButton value="重設" ajax="false"/>
 							</td>
 						</tr>
 					</table>
 				</p:fieldset>
-				<p:fieldset legend="" id="resultList" rendered="#{fileQuery.dto.files != null}">
+				<p:fieldset legend="" id="resultList" rendered="#{fileQueryController.dto.files != null}">
 					<table>
-						<p:dataTable var="file" value="#{fileQuery.dto.files}" rows="10"
+						<p:dataTable var="file" value="#{fileQueryController.dto.files}" rows="10"
 							paginator="true"
 							rowsPerPageTemplate="5,10,15">
 							<p:column headerText="日期">
