@@ -8,28 +8,12 @@ import org.primefaces.model.menu.DefaultMenuModel;
 import org.primefaces.model.menu.DefaultSubMenu;
 import org.primefaces.model.menu.MenuModel;
 
+import com.iisi.api.menu.service.MenuService;
+
 @ManagedBean
 public class IndexController {
 	
 	private MenuModel model;
-	
-	final private String ADD_USER = "addUser";
-	
-	final private String FILE_DELETE = "fileDelete";
-	
-	final private String FILE_QUERY = "fileQuery";
-	
-	final private String FILE_UP_LOAD = "fileUpload";
-	
-	final private String LOGIN_LOG_QUERY = "loginLogQuery";
-	
-	final private String OPERATION_LOG_QUERY = "operationLogQuery";
-	
-	final private String QUERY_USER = "queryUser";
-	
-	final private String UPDATE_PWD = "updatePwd";
-	
-	final private String UPDATE_USER = "updateUser";
 	
 	@PostConstruct
 	public void init(){
@@ -38,18 +22,18 @@ public class IndexController {
 		DefaultSubMenu fileMenu = new DefaultSubMenu("檔案處理");
 		
 		DefaultMenuItem item = new DefaultMenuItem("檔案上傳");
-		item.setCommand("#{indexAction.fileUpload}");
+		item.setCommand("#{indexController.fileUpload}");
 		item.setIcon("ui-icon-disk");
 		item.setAjax(false);
 		fileMenu.addElement(item);
 		
 		item = new DefaultMenuItem("檔案查詢");
-		item.setCommand("#{indexAction.fileQuery}");
+		item.setCommand("#{indexController.fileQuery}");
 		item.setIcon("ui-icon-search");
 		fileMenu.addElement(item);
 		
 		item = new DefaultMenuItem("檔案刪除");
-		item.setCommand("#{indexAction.fileDelete}");
+		item.setCommand("#{indexController.fileDelete}");
 		item.setIcon("ui-icon-close");
 		fileMenu.addElement(item);
 		
@@ -57,17 +41,17 @@ public class IndexController {
 		
 		DefaultSubMenu accountMenu = new DefaultSubMenu("帳號管理");
 		item = new DefaultMenuItem("密碼修改");
-		item.setCommand("#{indexAction.updatePwd}");
+		item.setCommand("#{indexController.updatePwd}");
 		item.setIcon("ui-icon-arrowrefresh-1-w");
 		accountMenu.addElement(item);
 		
 		item = new DefaultMenuItem("新增使用者");
-		item.setCommand("#{indexAction.addUser}");
+		item.setCommand("#{indexController.addUser}");
 		item.setIcon("ui-icon-disk");
 		accountMenu.addElement(item);
 		
 		item = new DefaultMenuItem("帳號查詢");
-		item.setCommand("#{indexAction.queryUser}");
+		item.setCommand("#{indexController.queryUser}");
 		item.setIcon("ui-icon-search");
 		accountMenu.addElement(item);
 		
@@ -75,12 +59,12 @@ public class IndexController {
 		
 		DefaultSubMenu logQueryMenu = new DefaultSubMenu("紀錄查詢");
 		item = new DefaultMenuItem("簽到/簽退紀錄查詢");
-		item.setCommand("#{indexAction.loginLogQuery}");
+		item.setCommand("#{indexController.loginLogQuery}");
 		item.setIcon("ui-icon-search");
 		logQueryMenu.addElement(item);
 		
 		item = new DefaultMenuItem("操作紀錄查詢");
-		item.setCommand("#{indexAction.operationLogQuery}");
+		item.setCommand("#{indexController.operationLogQuery}");
 		item.setIcon("ui-icon-search");
 		logQueryMenu.addElement(item);
 		
@@ -88,40 +72,39 @@ public class IndexController {
 	}
 	
 	public String addUser(){
-		return this.ADD_USER;
+		return MenuService.ADD_USER;
 	}
 	
 	public String fileDelete(){
-		return this.FILE_DELETE;
+		return MenuService.FILE_DELETE;
 	}
 	
 	public String fileQuery(){
-		return this.FILE_QUERY;
+		return MenuService.FILE_QUERY;
 	}
 	
 	public String fileUpload(){
-		System.out.println("fileUpload");
-		return this.FILE_UP_LOAD;
+		return MenuService.FILE_UP_LOAD;
 	}
 	
 	public String loginLogQuery(){
-		return this.LOGIN_LOG_QUERY;
+		return MenuService.LOGIN_LOG_QUERY;
 	}
 	
 	public String operationLogQuery(){
-		return this.OPERATION_LOG_QUERY;
+		return MenuService.OPERATION_LOG_QUERY;
 	}
 	
 	public String queryUser(){
-		return this.QUERY_USER;
+		return MenuService.QUERY_USER;
 	}
 	
 	public String updatePwd(){
-		return this.UPDATE_PWD;
+		return MenuService.UPDATE_PWD;
 	}
 	
 	public String updateUser(){
-		return this.UPDATE_USER;
+		return MenuService.UPDATE_USER;
 	}
 	
 	public MenuModel getModel() {
