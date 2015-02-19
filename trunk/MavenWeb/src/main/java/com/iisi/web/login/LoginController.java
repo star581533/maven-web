@@ -12,10 +12,12 @@ import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 
+import org.springframework.stereotype.Controller;
+
 import com.iisi.api.domain.LoginDTO;
 import com.iisi.api.login.LoginService;
 
-@ManagedBean
+@Controller
 @RequestScoped
 public class LoginController implements Serializable{
 	
