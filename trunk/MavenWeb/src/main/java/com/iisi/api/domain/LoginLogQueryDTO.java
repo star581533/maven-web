@@ -1,9 +1,14 @@
 package com.iisi.api.domain;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 
-public class AddUserDTO implements Serializable {
-	
+import com.iisi.api.model.LoginLog;
+
+public class LoginLogQueryDTO implements Serializable {
+
 	/**
 	 * 
 	 */
@@ -15,11 +20,21 @@ public class AddUserDTO implements Serializable {
 	
 	private String officeName;
 	
+	private Date startDate;
+	
+	private Date endDate;
+	
 	private String userId;
 	
 	private String userName;
 	
-	private String roleId;
+	private String dateStart;
+	
+	private String dateEnd;
+	
+	private SimpleDateFormat sf = new SimpleDateFormat("yyyy/mm/dd");
+	
+	private List<LoginLog> loginLogs;
 
 	public String getOfficeData() {
 		return officeData;
@@ -44,6 +59,22 @@ public class AddUserDTO implements Serializable {
 	public void setOfficeName(String officeName) {
 		this.officeName = officeName;
 	}
+
+	public Date getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
+	}
+
+	public Date getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(Date endDate) {
+		this.endDate = endDate;
+	}
 	
 	public String getUserId() {
 		return userId;
@@ -60,13 +91,29 @@ public class AddUserDTO implements Serializable {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	
-	public String getRoleId() {
-		return roleId;
+
+	public List<LoginLog> getLoginLogs() {
+		return loginLogs;
 	}
 
-	public void setRoleId(String roleId) {
-		this.roleId = roleId;
+	public void setLoginLogs(List<LoginLog> loginLogs) {
+		this.loginLogs = loginLogs;
+	}	
+	
+	public String getDateStart() {
+		return sf.format(startDate);
+	}
+
+	public void setDateStart(String dateStart) {
+		this.dateStart = dateStart;
+	}
+
+	public String getDateEnd() {
+		return sf.format(endDate);
+	}
+
+	public void setDateEnd(String dateEnd) {
+		this.dateEnd = dateEnd;
 	}
 
 	public void splitOfficeData(String data){

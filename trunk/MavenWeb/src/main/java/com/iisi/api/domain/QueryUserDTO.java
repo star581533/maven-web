@@ -1,9 +1,12 @@
 package com.iisi.api.domain;
 
 import java.io.Serializable;
+import java.util.List;
 
-public class AddUserDTO implements Serializable {
-	
+import com.iisi.api.model.User;
+
+public class QueryUserDTO implements Serializable{
+
 	/**
 	 * 
 	 */
@@ -11,16 +14,16 @@ public class AddUserDTO implements Serializable {
 
 	private String officeData;
 	
+	private String state;
+
 	private String officeId;
 	
 	private String officeName;
 	
-	private String userId;
+	private List<User> users;
 	
-	private String userName;
-	
-	private String roleId;
-
+	private User user;
+		
 	public String getOfficeData() {
 		return officeData;
 	}
@@ -28,7 +31,15 @@ public class AddUserDTO implements Serializable {
 	public void setOfficeData(String officeData) {
 		this.officeData = officeData;
 	}
-	
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
 	public String getOfficeId() {
 		return officeId;
 	}
@@ -44,29 +55,21 @@ public class AddUserDTO implements Serializable {
 	public void setOfficeName(String officeName) {
 		this.officeName = officeName;
 	}
-	
-	public String getUserId() {
-		return userId;
+		
+	public List<User> getUsers() {
+		return users;
 	}
 
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setUsers(List<User> users) {
+		this.users = users;
+	}	
+
+	public User getUser() {
+		return user;
 	}
 
-	public String getUserName() {
-		return userName;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-	
-	public String getRoleId() {
-		return roleId;
-	}
-
-	public void setRoleId(String roleId) {
-		this.roleId = roleId;
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	public void splitOfficeData(String data){
