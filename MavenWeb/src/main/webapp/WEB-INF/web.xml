@@ -25,6 +25,12 @@
 		<param-value>Development</param-value>
 	</context-param>
 	
+	<!-- Set Spring ApplicationContext -->
+	<context-param>
+  		<param-name>contextConfigLocation</param-name>
+  		<param-value>/WEB-INF/applicationContext.xml</param-value>
+  	</context-param> 
+	
 	<!-- Welcome page -->
 	<welcome-file-list>
 		<welcome-file>faces/login.xhtml</welcome-file>
@@ -54,4 +60,26 @@
 		<servlet-name>Faces Servlet</servlet-name>
 		<url-pattern>*.xhtml</url-pattern>
 	</servlet-mapping>
+	
+	<!-- http://dachengxi.blog.51cto.com/4658215/1314920 -->
+  	<filter>
+  		<filter-name>openSessionInViewFilter</filter-name>
+  		<filter-class>
+  			org.springframework.orm.hibernate4.support.OpenSessionInViewFilter
+  		</filter-class>
+	 	<!-- 指定在Spring配置的sessionFactory-->
+	 	<init-param>
+	 		<param-name>H4TxManager</param-name>
+	 		<param-value>sessionFactory</param-value>
+	 	</init-param>
+	 	<!-- singleSession默認為true，若設為false則等於沒用OpenSessionInView -->
+	 	<init-param>
+	 		<param-name>singleSession</param-name>
+	 		<param-value>true</param-value>
+	 	</init-param>
+  	</filter>
+  	<filter-mapping>
+  		<filter-name>openSessionInViewFilter</filter-name>
+  		<url-pattern>/*</url-pattern>
+  	</filter-mapping>
 </web-app>
