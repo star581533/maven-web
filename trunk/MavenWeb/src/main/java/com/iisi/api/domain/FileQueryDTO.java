@@ -1,6 +1,7 @@
 package com.iisi.api.domain;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 import com.iisi.api.model.FileData;
@@ -16,9 +17,9 @@ public class FileQueryDTO implements Serializable {
 	
 	private String secret;
 	
-	private String startDate;
+	private Date startDate;
 	
-	private String endDate;
+	private Date endDate;
 	
 	private String classNum;
 	
@@ -46,19 +47,19 @@ public class FileQueryDTO implements Serializable {
 		this.secret = secret;
 	}
 
-	public String getStartDate() {
+	public Date getStartDate() {
 		return startDate;
 	}
 
-	public void setStartDate(String startDate) {
+	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
 
-	public String getEndDate() {
+	public Date getEndDate() {
 		return endDate;
 	}
 
-	public void setEndDate(String endDate) {
+	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}
 
