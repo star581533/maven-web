@@ -1,57 +1,57 @@
-package com.iisi.web.filequery;
+package com.iisi.web.loginlogquery;
 
 import java.io.Serializable;
 
+
+
+
+import java.util.Map;
+
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
-import javax.faces.bean.SessionScoped;
+import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 import com.iisi.api.constant.ConstantObject;
-import com.iisi.api.domain.FileQueryDTO;
+import com.iisi.api.domain.LoginLogQueryDTO;
 import com.iisi.api.execption.FileSysException;
-import com.iisi.api.fileQuery.FileQueryService;
+import com.iisi.api.loginLogQuery.LoginLogQueryService;
 
 @Controller
-@SessionScoped
-public class FileQueryController implements Serializable {
+@RequestScoped
+public class LoginLogQueryController implements Serializable {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	private FileQueryDTO dto;
+	private LoginLogQueryDTO dto;
 	
 	@Autowired
-	private FileQueryService fileQueryService;
+	private LoginLogQueryService loginLogQueryService;
 	
+	private String officeAll;
+
 	@PostConstruct
 	public void init(){
-		dto = new FileQueryDTO();
+		dto = new LoginLogQueryDTO();
+	}
+
+	public void doQuery(){
+		this.verifyData();
+		dto.setLoginLogs(this.loginLogQueryService.getLoginLogList(dto));
 	}
 	
-	public void doQuery(){
-		try{			
-			this.verifyData();
-			dto.setFiles(fileQueryService.getFileList(dto));
-		}catch(FileSysException e){
-			System.out.println(e.getMessage());
-		}catch(Exception e){
-			
-		}
+	public void doPrint(){
+		
 	}
 	
 	private void verifyData(){
 		FacesContext context = FacesContext.getCurrentInstance();
-		//類型
-		if(null == dto.getType() || dto.getType().length() == 0){
-			context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_WARN, ConstantObject.INPUT_DATA, ConstantObject.WARN_MSG_INPUT_TYPE));
-			throw new FileSysException(ConstantObject.WARN_MSG_INPUT_TYPE);
-		}
 		//起始日
 		if(null == dto.getStartDate() || dto.getStartDate().toString().length() == 0){
 			context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_WARN, ConstantObject.INPUT_DATA, ConstantObject.WARN_MSG_INPUT_START_DATE));
@@ -64,11 +64,21 @@ public class FileQueryController implements Serializable {
 		}
 	}
 
-	public FileQueryDTO getDto() {
+	public LoginLogQueryDTO getDto() {
 		return dto;
 	}
 
-	public void setDto(FileQueryDTO dto) {
+	public void setDto(LoginLogQueryDTO dto) {
 		this.dto = dto;
 	}
+
+	public String getOfficeAll() {
+		return officeAll;
+	}
+
+	public void setOfficeAll(String officeAll) {
+		this.officeAll = officeAll;
+	}
+	
+	
 }
