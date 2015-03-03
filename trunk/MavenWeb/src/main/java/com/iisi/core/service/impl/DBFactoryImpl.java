@@ -2,9 +2,11 @@
 package com.iisi.core.service.impl;
 
 import java.util.List;
+
+import javax.inject.Inject;
+
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
@@ -14,16 +16,18 @@ import com.iisi.api.db.DBFactory;
 @Qualifier("dbFactory")
 public class DBFactoryImpl implements DBFactory{
 	
-	@Autowired
+	//http://blog.csdn.net/augus6/article/details/9745451
+	@Inject
 	private SessionFactory sessionFactory;
-	
-	public <T> List query(List<T> params, String sql, Class clazz){
+		
+	public <T> List<?> query(List<T> params, String sql, Class<?> clazz){		
+		
 		Query query = sessionFactory.getCurrentSession().createSQLQuery(sql).addEntity(clazz);
 		for(int param=0;param < params.size();param++){
 			query.setParameter(param, params.get(param));
 		}
 		
-		List lists = query.list();
+		List<?> lists = query.list();
 		return lists;
 	}
 	

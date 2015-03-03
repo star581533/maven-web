@@ -17,7 +17,7 @@
 	<context:component-scan base-package="com.iisi.core.*" />
 	<context:component-scan base-package="com.iisi.web.*" />
  
- 	<!-- 
+ 	<!-- mysql db -->
  	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName">
 			<value>com.mysql.jdbc.Driver</value>
@@ -32,9 +32,9 @@
 			<value>123456</value>
 		</property>
 	</bean>
-	-->
 	
-	<!--  -->
+	
+	<!-- h2 db 
  	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName">
 			<value>org.h2.Driver</value>
@@ -49,6 +49,7 @@
 			<value></value>
 		</property>
 	</bean>
+	-->
 
 	<!--  -->
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
@@ -76,13 +77,12 @@
 		
 	</bean>
 
-<!-- 
 	<tx:annotation-driven transaction-manager="transactionManager"/>
 	
 	<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
-  -->
+
   <!-- 
   	<tx:advice id="txAdvice" transaction-manager="transactionManager">
 		<tx:attributes>
