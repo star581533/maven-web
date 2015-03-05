@@ -1,11 +1,14 @@
 package com.iisi.web.loginlogquery;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
+import javax.faces.model.SelectItem;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,6 +17,8 @@ import com.iisi.api.constant.ConstantObject;
 import com.iisi.api.domain.LoginLogQueryDTO;
 import com.iisi.api.execption.FileSysException;
 import com.iisi.api.loginLogQuery.LoginLogQueryService;
+import com.iisi.api.model.Office;
+import com.iisi.api.office.OfficeService;
 
 @Controller
 @RequestScoped
@@ -30,10 +35,14 @@ public class LoginLogQueryController implements Serializable {
 	private LoginLogQueryService loginLogQueryService;
 	
 	private String officeAll;
-
+	
+	@Autowired
+	private OfficeService officeService;
+	
 	@PostConstruct
 	public void init(){
 		dto = new LoginLogQueryDTO();
+//		List<SelectItem> items = officeService.getOfficeItems();
 	}
 
 	public void doQuery(){
