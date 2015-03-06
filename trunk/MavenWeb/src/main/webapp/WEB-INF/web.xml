@@ -18,6 +18,11 @@
 			org.springframework.web.context.request.RequestContextListener
 		</listener-class>
 	</listener>
+	<listener>
+		<listener-class>
+			com.sun.faces.config.ConfigureListener
+		</listener-class>
+	</listener>
 		
 	<!-- Change to "Production" when you are ready to deploy -->
 	<context-param>
@@ -30,6 +35,16 @@
   		<param-name>contextConfigLocation</param-name>
   		<param-value>/WEB-INF/applicationContext.xml</param-value>
   	</context-param> 
+  	
+  	<context-param>
+		<description>State saving method: 'client' or 'server' (=default). See JSF Specification 2.5.2</description>
+		<param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+		<param-value>client</param-value>
+	</context-param>
+	<context-param>
+		<param-name>primefaces.UPLOADER</param-name>
+		<param-value>auto</param-value>
+	</context-param>
 	
 	<!-- Welcome page -->
 	<welcome-file-list>
