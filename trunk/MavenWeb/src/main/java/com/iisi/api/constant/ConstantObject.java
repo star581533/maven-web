@@ -2,331 +2,331 @@ package com.iisi.api.constant;
 
 public interface ConstantObject {
 	
-	/** ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ	Äµ§i°T®§   ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ */
+	/** â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“	è­¦å‘Šè¨Šæ¯   â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“ */
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J¸ê®Æ
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥è³‡æ–™
 	 */
-	static final String INPUT_DATA = "½Ð¿é¤J¸ê®Æ";
+	static final String INPUT_DATA = "è«‹è¼¸å…¥è³‡æ–™";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J¨Ï¥ÎªÌ±b¸¹
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥ä½¿ç”¨è€…å¸³è™Ÿ
 	 */
-	static final String WARN_MSG_USER_ID = "½Ð¿é¤J¨Ï¥ÎªÌ±b¸¹";
+	static final String WARN_MSG_USER_ID = "è«‹è¼¸å…¥ä½¿ç”¨è€…å¸³è™Ÿ";
 		
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J±K½X
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥å¯†ç¢¼
 	 */
-	static final String WARN_MSG_USER_PWD = "½Ð¿é¤J±K½X";
+	static final String WARN_MSG_USER_PWD = "è«‹è¼¸å…¥å¯†ç¢¼";
 	
 	/**
-	 * Äµ§i°T®§-¨Ï¥ÎªÌ±b¸¹¿ù»~
+	 * è­¦å‘Šè¨Šæ¯-ä½¿ç”¨è€…å¸³è™ŸéŒ¯èª¤
 	 */
-	static final String WARN_MSG_USER_ERR = "¨Ï¥ÎªÌ±b¸¹¿ù»~";
+	static final String WARN_MSG_USER_ERR = "ä½¿ç”¨è€…å¸³è™ŸéŒ¯èª¤";
 	
 	/**
-	 * Äµ§i°T®§-±K½X¿é¤J¿ù»~
+	 * è­¦å‘Šè¨Šæ¯-å¯†ç¢¼è¼¸å…¥éŒ¯èª¤
 	 */
-	static final String WARN_MSG_USER_PWD_ERR = "±K½X¿é¤J¿ù»~";
+	static final String WARN_MSG_USER_PWD_ERR = "å¯†ç¢¼è¼¸å…¥éŒ¯èª¤";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J°_©l¤é
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥èµ·å§‹æ—¥
 	 */
-	static final String WARN_MSG_INPUT_START_DATE = "½Ð¿é¤J°_©l¤é";
+	static final String WARN_MSG_INPUT_START_DATE = "è«‹è¼¸å…¥èµ·å§‹æ—¥";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J¨´¤î¤é
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥è¿„æ­¢æ—¥
 	 */
-	static final String WARN_MSG_INPUT_END_DATE = "½Ð¿é¤J¨´¤î¤é";
+	static final String WARN_MSG_INPUT_END_DATE = "è«‹è¼¸å…¥è¿„æ­¢æ—¥";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J¤é´Á
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥æ—¥æœŸ
 	 */
-	static final String WARN_MSG_INPUT_UPLOAD_DATE = "½Ð¿é¤J¤é´Á";
+	static final String WARN_MSG_INPUT_UPLOAD_DATE = "è«‹è¼¸å…¥æ—¥æœŸ";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤JÃþ«¬¿ï¶µ
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥é¡žåž‹é¸é …
 	 */
-	static final String WARN_MSG_INPUT_TYPE = "½Ð¿é¤JÃþ«¬¿ï¶µ";
+	static final String WARN_MSG_INPUT_TYPE = "è«‹è¼¸å…¥é¡žåž‹é¸é …";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J±K¥ó¿ï¶µ
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥å¯†ä»¶é¸é …
 	 */
-	static final String WARN_MSG_INPUT_SECRET = "½Ð¿é¤J±K¥ó¿ï¶µ";
+	static final String WARN_MSG_INPUT_SECRET = "è«‹è¼¸å…¥å¯†ä»¶é¸é …";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J¤ÀÃþ¸¹
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥åˆ†é¡žè™Ÿ
 	 */
-	static final String WARN_MSG_INPUT_CLASSNUM = "½Ð¿é¤J¤ÀÃþ¸¹";
+	static final String WARN_MSG_INPUT_CLASSNUM = "è«‹è¼¸å…¥åˆ†é¡žè™Ÿ";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J¤½¤å¤å¸¹
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥å…¬æ–‡æ–‡è™Ÿ
 	 */
-	static final String WARN_MSG_INPUT_DISPATCHNUM = "½Ð¿é¤J¤½¤å¤å¸¹";
+	static final String WARN_MSG_INPUT_DISPATCHNUM = "è«‹è¼¸å…¥å…¬æ–‡æ–‡è™Ÿ";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J¥D¦®
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥ä¸»æ—¨
 	 */
-	static final String WARN_MSG_INPUT_SUBJECT = "½Ð¿é¤J¥D¦®";
+	static final String WARN_MSG_INPUT_SUBJECT = "è«‹è¼¸å…¥ä¸»æ—¨";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤JÀÉ®×
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥æª”æ¡ˆ
 	 */
-	static final String WARN_MSG_INPUT_FILE = "½Ð¿é¤JÀÉ®×";
+	static final String WARN_MSG_INPUT_FILE = "è«‹è¼¸å…¥æª”æ¡ˆ";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤JÂÂ±K½X
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥èˆŠå¯†ç¢¼
 	 */
-	static final String WARN_MSG_INPUT_OLD_PASSWORD = "½Ð¿é¤JÂÂ±K½X";
+	static final String WARN_MSG_INPUT_OLD_PASSWORD = "è«‹è¼¸å…¥èˆŠå¯†ç¢¼";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J·s±K½X
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥æ–°å¯†ç¢¼
 	 */
-	static final String WARN_MSG_INPUT_NEW_PASSWORD = "½Ð¿é¤J·s±K½X";
+	static final String WARN_MSG_INPUT_NEW_PASSWORD = "è«‹è¼¸å…¥æ–°å¯†ç¢¼";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J½T»{±K½X
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥ç¢ºèªå¯†ç¢¼
 	 */
-	static final String WARN_MSG_INPUT_CONFIRM_PASSWORD = "½Ð¿é¤J½T»{±K½X";
+	static final String WARN_MSG_INPUT_CONFIRM_PASSWORD = "è«‹è¼¸å…¥ç¢ºèªå¯†ç¢¼";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J¬ì§O
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥ç§‘åˆ¥
 	 */
-	static final String WARN_MSG_INPUT_OFFICE = "½Ð¿é¤J¬ì§O";
+	static final String WARN_MSG_INPUT_OFFICE = "è«‹è¼¸å…¥ç§‘åˆ¥";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J¨Ï¥ÎªÌ©m¦W
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥ä½¿ç”¨è€…å§“å
 	 */
-	static final String WARN_MSG_INPUT_USERNAME = "½Ð¿é¤J¨Ï¥ÎªÌ©m¦W";
+	static final String WARN_MSG_INPUT_USERNAME = "è«‹è¼¸å…¥ä½¿ç”¨è€…å§“å";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J¦bÂ¾ª¬ºA
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥åœ¨è·ç‹€æ…‹
 	 */
-	static final String WARN_MSG_INPUT_STATE = "¦bÂ¾ª¬ºA";
+	static final String WARN_MSG_INPUT_STATE = "åœ¨è·ç‹€æ…‹";
 	
 	/**
-	 * Äµ§i°T®§-½Ð¿é¤J¨Ï¥ÎªÌÅv­­
+	 * è­¦å‘Šè¨Šæ¯-è«‹è¼¸å…¥ä½¿ç”¨è€…æ¬Šé™
 	 */
-	static final String WARN_MSG_INPUT_ROLEID = "½Ð¿é¤J¨Ï¥ÎªÌÅv­­";
+	static final String WARN_MSG_INPUT_ROLEID = "è«‹è¼¸å…¥ä½¿ç”¨è€…æ¬Šé™";
 	
-	/** ¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô	Äµ§i°T®§   ¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô */
+	/** â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘	è­¦å‘Šè¨Šæ¯   â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘ */
 	
-	/** ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ	¿ù»~°T®§   ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ */
+	/** â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“	éŒ¯èª¤è¨Šæ¯   â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“ */
 	
 	/**
-	 * ¿ù»~°T®§-¸ê®Æ¤w¦s¦b
+	 * éŒ¯èª¤è¨Šæ¯-è³‡æ–™å·²å­˜åœ¨
 	 */
-	static final String ERROR_MSG_DATA = "¸ê®Æ¤w¦s¦b";
+	static final String ERROR_MSG_DATA = "è³‡æ–™å·²å­˜åœ¨";
 	
 	/**
-	 * ¿ù»~°T®§-¨Ï¥ÎªÌ¸ê®Æ¤w¦s¦b
+	 * éŒ¯èª¤è¨Šæ¯-ä½¿ç”¨è€…è³‡æ–™å·²å­˜åœ¨
 	 */
-	static final String ERROR_MSG_USER_EXIST = "¨Ï¥ÎªÌ¸ê®Æ¤w¦s¦b";
+	static final String ERROR_MSG_USER_EXIST = "ä½¿ç”¨è€…è³‡æ–™å·²å­˜åœ¨";
 	
 	/**
-	 * ¿ù»~°T®§-·s¼W¨Ï¥ÎªÌ¸ê®Æ¥¢±Ñ
+	 * éŒ¯èª¤è¨Šæ¯-æ–°å¢žä½¿ç”¨è€…è³‡æ–™å¤±æ•—
 	 */
-	static final String ERROR_MSG_USER_ERROR = "·s¼W¨Ï¥ÎªÌ¸ê®Æ¥¢±Ñ";
+	static final String ERROR_MSG_USER_ERROR = "æ–°å¢žä½¿ç”¨è€…è³‡æ–™å¤±æ•—";
 	
 	
-	/** ¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô	¿ù»~°T®§   ¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô */
+	/** â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘	éŒ¯èª¤è¨Šæ¯   â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘ */
 	
-	/** ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ	¦¨¥\°T®§   ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ */
+	/** â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“	æˆåŠŸè¨Šæ¯   â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“ */
 	
 	/**
-	 * ¦¨¥\°T®§-·s¼W¸ê®Æ¦¨¥\
+	 * æˆåŠŸè¨Šæ¯-æ–°å¢žè³‡æ–™æˆåŠŸ
 	 */
-	static final String INFO_MSG_DATA = "·s¼W¸ê®Æ¦¨¥\";
+	static final String INFO_MSG_DATA = "æ–°å¢žè³‡æ–™æˆåŠŸ";
 	
 	/**
-	 * ¦¨¥\°T®§-·s¼W¨Ï¥ÎªÌ¸ê®Æ¦¨¥\
+	 * æˆåŠŸè¨Šæ¯-æ–°å¢žä½¿ç”¨è€…è³‡æ–™æˆåŠŸ
 	 */
-	static final String INFO_MSG_ADD_USER_DATA = "·s¼W¨Ï¥ÎªÌ¸ê®Æ¦¨¥\";
+	static final String INFO_MSG_ADD_USER_DATA = "æ–°å¢žä½¿ç”¨è€…è³‡æ–™æˆåŠŸ";
 		
 	
-	/** ¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô	¦¨¥\°T®§   ¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô */
+	/** â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘	æˆåŠŸè¨Šæ¯   â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘ */
 	
-	/** ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ	¦@¥Î¤å¦r   ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ¡õ */
+	/** â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“	å…±ç”¨æ–‡å­—   â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“â†“ */
 	
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-1
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-1
 	 */
 	static final String ZERO = "0";
 	
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-1
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-1
 	 */
 	static final String ONE = "1";
 	
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-2
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-2
 	 */
 	static final String TWO = "2";
 	
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-3
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-3
 	 */
 	static final String THREE = "3";
 	
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-4
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-4
 	 */
 	static final String FOUR = "4";
 	
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-5
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-5
 	 */
 	static final String FIVE = "5";
 	
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-6
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-6
 	 */
 	static final String SIX = "6";
 	
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-7
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-7
 	 */
 	static final String SEVEN = "7";
 	
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-8
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-8
 	 */
 	static final String EIGHT = "8";
 	
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-9
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-9
 	 */
 	static final String NINE = "9";
 	
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-A
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-A
 	 */
 	static final String UPPER_CASE_A = "A";
 	
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-B
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-B
 	 */
 	static final String UPPER_CASE_B = "B";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-C
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-C
 	 */
 	static final String UPPER_CASE_C = "C";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-D
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-D
 	 */
 	static final String UPPER_CASE_D = "D";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-E
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-E
 	 */
 	static final String UPPER_CASE_E = "E";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-F
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-F
 	 */
 	static final String UPPER_CASE_F = "F";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-G
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-G
 	 */
 	static final String UPPER_CASE_G = "G";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-H
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-H
 	 */
 	static final String UPPER_CASE_H = "H";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-I
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-I
 	 */
 	static final String UPPER_CASE_I = "I";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-J
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-J
 	 */
 	static final String UPPER_CASE_J = "J";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-K
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-K
 	 */
 	static final String UPPER_CASE_K = "K";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-L
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-L
 	 */
 	static final String UPPER_CASE_L = "L";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-M
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-M
 	 */
 	static final String UPPER_CASE_M = "M";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-N
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-N
 	 */
 	static final String UPPER_CASE_N = "N";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-O
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-O
 	 */
 	static final String UPPER_CASE_O = "O";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-P
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-P
 	 */
 	static final String UPPER_CASE_P = "P";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-Q
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-Q
 	 */
 	static final String UPPER_CASE_Q = "Q";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-R
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-R
 	 */
 	static final String UPPER_CASE_R = "R";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-S
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-S
 	 */
 	static final String UPPER_CASE_S = "S";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-T
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-T
 	 */
 	static final String UPPER_CASE_T = "T";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-U
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-U
 	 */
 	static final String UPPER_CASE_U = "U";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-V
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-V
 	 */
 	static final String UPPER_CASE_V = "V";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-W
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-W
 	 */
 	static final String UPPER_CASE_W = "W";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-X
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-X
 	 */
 	static final String UPPER_CASE_X = "X";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-Y
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-Y
 	 */
 	static final String UPPER_CASE_Y = "Y";
 
 	/**
-	 * ¦@¥Î¤å¦r-¦r¦ê-¤j¼g-Z
+	 * å…±ç”¨æ–‡å­—-å­—ä¸²-å¤§å¯«-Z
 	 */
 	static final String UPPER_CASE_Z = "Z";
 	
-	/** ¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô	¦@¥Î¤å¦r   ¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô¡ô */
+	/** â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘	å…±ç”¨æ–‡å­—   â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘â†‘ */
 }

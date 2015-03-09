@@ -17,21 +17,35 @@ import org.springframework.stereotype.Controller;
 @SessionScoped
 public class FileUploadManagedBean {
 	
-    private UploadedFile file;
+    private UploadedFile uploadedFile;
  
     public FileUploadManagedBean(){}
-    
-    public UploadedFile getFile() {
-        return file;
-    }
- 
-    public void setFile(UploadedFile file) {
-        this.file = file;
-    }
- 
-    public void dummyAction(FileUploadEvent event){
-    	System.out.println("upload file start");
-    	byte[] bytes = event.getFile().getContents(); 
-    		System.out.println("Uploaded File Name Is :: "+event.getFile().getFileName()+" :: Uploaded File Size :: "+ bytes.length);
-    }
+     
+    public UploadedFile getUploadedFile() {
+		return uploadedFile;
+	}
+
+	public void setUploadedFile(UploadedFile uploadedFile) {
+		this.uploadedFile = uploadedFile;
+	}
+	
+	public void handleFileUpload(FileUploadEvent event){
+		UploadedFile file = event.getFile();
+		System.out.println("Uploaded:" + event.getFile().getFileName());
+		
+	}
+	
+	//OK
+	public void submit(){
+		System.out.println("Uploaded file name = " + uploadedFile.getFileName());
+		System.out.println("Uploaded file size = " + uploadedFile.getSize());
+	}
+	
+
+
+//	public void dummyAction(FileUploadEvent event){
+//    	System.out.println("upload file start");
+//    	byte[] bytes = event.getFile().getContents(); 
+//    		System.out.println("Uploaded File Name Is :: "+event.getFile().getFileName()+" :: Uploaded File Size :: "+ bytes.length);
+//    }
 }
