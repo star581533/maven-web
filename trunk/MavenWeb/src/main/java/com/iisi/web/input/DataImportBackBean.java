@@ -64,6 +64,13 @@ public class DataImportBackBean {
 		try {
 			OutputStream outputStream = new FileOutputStream(new File(filesDir, serverName));
 			outputStream.write(wrappedUploadedFile.getContents());
+			
+//			byte[] b = new byte[1024];
+//			int len = 0;
+//			while((len = wrappedUploadedFile.getInputstream().read(b)) > 0){
+//				outputStream.write(b, 0, len);
+//			}
+			
 			outputStream.close();
 		} catch (Exception e) {
 			e.printStackTrace();
