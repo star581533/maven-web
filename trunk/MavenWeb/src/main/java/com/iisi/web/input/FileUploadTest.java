@@ -1,6 +1,8 @@
 //http://www.journaldev.com/3229/primefaces-fileupload-component-example-tutorial
 
 //http://hank20.blogspot.tw/2013/03/jsfprimefaces.html try it
+
+//http://www.28im.com/java/a1243858.html
 package com.iisi.web.input;
 
 import java.io.File;
