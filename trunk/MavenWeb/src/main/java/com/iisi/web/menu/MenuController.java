@@ -19,51 +19,51 @@ public class MenuController {
 	public void init(){
 		model = new DefaultMenuModel();
 		
-		DefaultSubMenu fileMenu = new DefaultSubMenu("ÀÉ®×³B²z");
+		DefaultSubMenu fileMenu = new DefaultSubMenu("æª”æ¡ˆè™•ç†");
 		
-		DefaultMenuItem item = new DefaultMenuItem("ÀÉ®×¤W¶Ç");
+		DefaultMenuItem item = new DefaultMenuItem("æª”æ¡ˆä¸Šå‚³");
 		item.setCommand("#{menuController.fileUpload}");
 		item.setIcon("ui-icon-disk");
 		item.setAjax(false);
 		fileMenu.addElement(item);
 		
-		item = new DefaultMenuItem("ÀÉ®×¬d¸ß");
+		item = new DefaultMenuItem("æª”æ¡ˆæŸ¥è©¢");
 		item.setCommand("#{menuController.fileQuery}");
 		item.setIcon("ui-icon-search");
 		fileMenu.addElement(item);
 		
-		item = new DefaultMenuItem("ÀÉ®×§R°£");
+		item = new DefaultMenuItem("æª”æ¡ˆåˆªé™¤");
 		item.setCommand("#{menuController.fileDelete}");
 		item.setIcon("ui-icon-close");
 		fileMenu.addElement(item);
 		
 		model.addElement(fileMenu);	
 		
-		DefaultSubMenu accountMenu = new DefaultSubMenu("±b¸¹ºŞ²z");
-		item = new DefaultMenuItem("±K½X­×§ï");
+		DefaultSubMenu accountMenu = new DefaultSubMenu("å¸³è™Ÿç®¡ç†");
+		item = new DefaultMenuItem("å¯†ç¢¼ä¿®æ”¹");
 		item.setCommand("#{menuController.updatePwd}");
 		item.setIcon("ui-icon-arrowrefresh-1-w");
 		accountMenu.addElement(item);
 		
-		item = new DefaultMenuItem("·s¼W¨Ï¥ÎªÌ");
+		item = new DefaultMenuItem("æ–°å¢ä½¿ç”¨è€…");
 		item.setCommand("#{menuController.addUser}");
 		item.setIcon("ui-icon-disk");
 		accountMenu.addElement(item);
 		
-		item = new DefaultMenuItem("±b¸¹¬d¸ß");
+		item = new DefaultMenuItem("å¸³è™ŸæŸ¥è©¢");
 		item.setCommand("#{menuController.queryUser}");
 		item.setIcon("ui-icon-search");
 		accountMenu.addElement(item);
 		
 		model.addElement(accountMenu);
 		
-		DefaultSubMenu logQueryMenu = new DefaultSubMenu("¬ö¿ı¬d¸ß");
-		item = new DefaultMenuItem("Ã±¨ì/Ã±°h¬ö¿ı¬d¸ß");
+		DefaultSubMenu logQueryMenu = new DefaultSubMenu("ç´€éŒ„æŸ¥è©¢");
+		item = new DefaultMenuItem("ç°½åˆ°/ç°½é€€ç´€éŒ„æŸ¥è©¢");
 		item.setCommand("#{menuController.loginLogQuery}");
 		item.setIcon("ui-icon-search");
 		logQueryMenu.addElement(item);
 		
-		item = new DefaultMenuItem("¾Ş§@¬ö¿ı¬d¸ß");
+		item = new DefaultMenuItem("æ“ä½œç´€éŒ„æŸ¥è©¢");
 		item.setCommand("#{menuController.operationLogQuery}");
 		item.setIcon("ui-icon-search");
 		logQueryMenu.addElement(item);

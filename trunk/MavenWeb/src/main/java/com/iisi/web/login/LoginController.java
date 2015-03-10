@@ -10,6 +10,7 @@ import javax.faces.application.FacesMessage;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 
+import org.apache.tomcat.util.http.fileupload.FileUploadException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -51,18 +52,18 @@ public class LoginController implements Serializable{
 	}
 		
 	/**
-	 * ����������
+	 * 執行資料驗證
 	 * @throws FileUploadException 
 	 */
 	private void verify() {
 		try{
 			FacesContext context = FacesContext.getCurrentInstance();
-			//�ˮ֨ϥΪ̱b��
+			//檢核使用者帳號
 			if(null == dto.getUserId() || dto.getUserId().length() == 0){
 				context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_WARN, ConstantObject.INPUT_DATA, ConstantObject.WARN_MSG_USER_ID));
 				throw new FileSysException(ConstantObject.WARN_MSG_USER_ID);
 			}
-			//�ˮ֨ϥΪ̱K�X
+			//檢核使用者密碼
 			if(null == dto.getPassword() || dto.getPassword().length() == 0){
 				context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_WARN, ConstantObject.INPUT_DATA, ConstantObject.WARN_MSG_USER_PWD));
 				throw new FileSysException(ConstantObject.WARN_MSG_USER_PWD);

@@ -14,10 +14,12 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 
+import org.springframework.stereotype.Controller;
 
-@ManagedBean
+
+@Controller
 @SessionScoped
-public class FileUploadAction implements Serializable {
+public class FileUploadController implements Serializable {
 	
 	/**
 	 * 
