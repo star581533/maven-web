@@ -85,6 +85,7 @@ public class FileUploadTest {
 		//http://w3facility.org/question/upload-an-image-to-a-path-set-in-web-xml-using-primefaces/
 		ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
 		System.out.println(externalContext.toString());
+		//取得web.xml中所設定目錄值
 		String directory = externalContext.getInitParameter("uploadDirectory");
 		System.out.println("uploadDirectory" + directory);
 		
@@ -109,6 +110,7 @@ public class FileUploadTest {
 		String serverName = UUID.randomUUID().toString() + fileName.substring(fileName.lastIndexOf('.'));
 		
 		try{
+			//將資料寫入指定目錄中
 			OutputStream outputStream = new FileOutputStream(new File(filesDir, serverName));
 			outputStream.write(uploadedFile.getContents());	
 			outputStream.close();

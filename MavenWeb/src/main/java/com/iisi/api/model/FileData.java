@@ -14,82 +14,82 @@ import javax.persistence.Table;
 public class FileData {
 	
 	/**
-	 * ¤ÀÃş¸¹
+	 * åˆ†é¡è™Ÿ
 	 */
 	private String classNum;
 	
 	/**
-	 * ¤é´Á
+	 * æ—¥æœŸ
 	 */
 	private String disPatchDate;
 	
 	/**
-	 * ¤½¤å¤å¸¹
+	 * å…¬æ–‡æ–‡è™Ÿ
 	 */
 	private String disPatchNum;
 	
 	/**
-	 * ÀÉ®×¦WºÙ
+	 * æª”æ¡ˆåç¨±
 	 */
 	private String fileName;
 	
 	/**
-	 * ¾÷Ãö
+	 * æ©Ÿé—œ
 	 */
 	private String government;
 	
 	/**
-	 * ¼v¹³½s¸¹
+	 * å½±åƒç·¨è™Ÿ
 	 */
 	private String imageId;
 	
 	/**
-	 * ¥Ø¿ı¦ì¸m
+	 * ç›®éŒ„ä½ç½®
 	 */
 	private String list;
 	
 	/**
-	 * ³æ¦ì¥N¸¹
+	 * å–®ä½ä»£è™Ÿ
 	 */
 	private String officeId;
 	
 	/**
-	 * Åv­­¥N¸¹
+	 * æ¬Šé™ä»£è™Ÿ
 	 */
 	private String roleId;
 	
 	/**
-	 * ±K¥ó
+	 * å¯†ä»¶
 	 */
 	private String secret;
 	
 	/**
-	 * ÀÉ®×¥D¦®
+	 * æª”æ¡ˆä¸»æ—¨
 	 */
 	private String subject;
 	
 	/**
-	 * Ãş«¬
+	 * é¡å‹
 	 */
 	private String type;
 	
 	/**
-	 * ¤W¶Ç¤é´Á
+	 * ä¸Šå‚³æ—¥æœŸ
 	 */
 	private String uploadDate;
 	
 	/**
-	 * ¤W¶Ç®É¶¡
+	 * ä¸Šå‚³æ™‚é–“
 	 */
 	private String uploadTime;
 	
 	/**
-	 * ¨Ï¥ÎªÌ±b¸¹
+	 * ä½¿ç”¨è€…å¸³è™Ÿ
 	 */
 	private String userId;
 	
 	/**
-	 * ¨Ï¥ÎªÌ©m¦W
+	 * ä½¿ç”¨è€…å§“å
 	 */
 	private String userName;
 
