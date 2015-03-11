@@ -108,11 +108,13 @@
   			<param-value>2097152</param-value>
   		</init-param>
   		-->
-  		<init-param>
-  			<param-name>uploadDirectory</param-name>
-  			<param-value>D:/test</param-value>
-  		</init-param>
   	</filter>
+  	
+  	<context-param>
+	  	<param-name>uploadDirectory</param-name>
+  		<param-value>D:/test</param-value>
+  	</context-param>
+  	
   	<filter-mapping>
 		<filter-name>PrimeFaces FileUpload Filter</filter-name>  
 		<servlet-name>Faces Servlet</servlet-name>	
