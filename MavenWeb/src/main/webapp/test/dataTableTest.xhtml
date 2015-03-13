@@ -10,11 +10,28 @@
     </h:head>
     <h:body>
         <h:form id="form">
-			<p:dataTable id="checkboxDT" var="car" value="#{selectionView.cars6}" selection="#{selectionView.selectedCars}" rowKey="#{car.id}" style="margin-bottom:0">
+			<p:dataTable id="checkboxDT" var="car" value="#{selectionView.cars6}" rows="5"
+			rowsPerPageTemplate="5,10,15" 
+			paginator="true"
+			selection="#{selectionView.selectedCars}" rowKey="#{car.id}" 
+			style="margin-bottom:0">
 		        <f:facet name="header">
 		            Checkbox
 		        </f:facet>
-		        <p:column selectionMode="multiple" style="width:16px;text-align:center"/>
+		        <!-- 
+		        <p:column selectionMode="multiple" style="width:16px;text-align:center" />
+		         -->
+		         <p:column>
+		         		<f:facet name="header">		         				         
+				         	<p:selectBooleanCheckbox value="#{selectionView.checkAll}">
+					        	<p:ajax event="change" update="checkboxDT" listener="#{selectBooleanView.checkAllListener}" />
+					        </p:selectBooleanCheckbox>
+						</f:facet>
+								<h:selectBooleanCheckbox  value="#{car.status}">
+									<p:ajax event="change" update="checkboxDT" />
+								</h:selectBooleanCheckbox>			        
+		         </p:column>
+		         
 		        <p:column headerText="Id">
 		            <h:outputText value="#{car.id}" />
 		        </p:column>
@@ -28,6 +45,8 @@
 		            <h:outputText value="#{car.color}" />
 		        </p:column>
     		</p:dataTable>
+    		<p:commandButton value="Test" actionListener="#{selectionView.checkAllListener}" update="form"/>   			
+    		
         </h:form>
     </h:body>
 </html>

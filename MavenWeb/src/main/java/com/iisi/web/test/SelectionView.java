@@ -29,6 +29,8 @@ public class SelectionView implements Serializable {
     private Car selectedCar;
     private List<Car> selectedCars;
     
+    private boolean checkAll;
+    
 //    @ManagedProperty("#{carService}")
     @Autowired
     private CarService service;
@@ -42,7 +44,20 @@ public class SelectionView implements Serializable {
         cars5 = service.createCars(10);
         cars6 = service.createCars(10);
     }
- 
+    
+    public void checkAllListener(){
+//        for (int i = start; i < end; i++) {
+//            if (i < dto.getRl01622SDPList().size()) {
+//                dto.getRl01622SDPList().get(i).setRegStatus(checkAll);
+//            }
+//        }
+    	
+    	for(int i=0;i<cars6.size();i++){
+    		cars6.get(i).setStatus(checkAll);
+    	}
+    	
+    }
+    
     public List<Car> getCars1() {
         return cars1;
     }
@@ -96,4 +111,12 @@ public class SelectionView implements Serializable {
         FacesMessage msg = new FacesMessage("Car Unselected", ((Car) event.getObject()).getId());
         FacesContext.getCurrentInstance().addMessage(null, msg);
     }
+
+	public boolean isCheckAll() {
+		return checkAll;
+	}
+
+	public void setCheckAll(boolean checkAll) {
+		this.checkAll = checkAll;
+	}
 }

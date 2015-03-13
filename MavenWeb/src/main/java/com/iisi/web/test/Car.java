@@ -10,6 +10,7 @@ public class Car implements Serializable {
     public String color;
     public int price;
     public boolean sold;
+    private boolean status;
 
     public Car() {}
     
@@ -71,7 +72,15 @@ public class Car implements Serializable {
         this.sold = sold;
     }
 
-    @Override
+    public boolean isStatus() {
+		return status;
+	}
+
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+
+	@Override
     public int hashCode() {
         int hash = 7;
         hash = 59 * hash + (this.id != null ? this.id.hashCode() : 0);
