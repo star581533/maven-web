@@ -24,7 +24,7 @@
 		         <p:column>
 		         		<f:facet name="header">		         				         
 				         	<p:selectBooleanCheckbox value="#{selectionView.checkAll}">
-					        	<p:ajax event="change" update="checkboxDT" listener="#{selectBooleanView.checkAllListener}" />
+					        	<p:ajax event="change" update="checkboxDT" listener="#{selectionView.checkAllListener}" />
 					        </p:selectBooleanCheckbox>
 						</f:facet>
 								<h:selectBooleanCheckbox  value="#{car.status}">
